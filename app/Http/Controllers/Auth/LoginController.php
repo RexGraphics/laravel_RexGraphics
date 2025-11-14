@@ -19,7 +19,7 @@ class LoginController extends Controller
     public function login(LoginRequest $request): RedirectResponse
     {
         $request->authenticate();
-        return redirect()->intended('/');
+        return redirect()->intended('/rumah-sakit');
     }
 
     public function logout(Request $request): RedirectResponse
